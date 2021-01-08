@@ -8,8 +8,6 @@ def initialize(title)
 end
 
 def add_backer(backer)
-  backer.project = self
-  backer.back_project(self)
   if !@backers.include?(backer) 
     @backers << backer
   end
